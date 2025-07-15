@@ -109,3 +109,12 @@ nav ul > .lang-switcher {
   display: flex;
   align-items: center;
 }
+footer {
+    text-align: center;
+    margin: 50px 0 20px 0;
+}
+footer img {
+    height: 30px;
+    vertical-align: middle;
+    margin-right: 10px;
+}

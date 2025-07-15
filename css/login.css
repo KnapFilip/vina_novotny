@@ -1,0 +1,61 @@
+/* register.css / login.css */
+body {
+    text-align: center;
+}
+
+main {
+  max-width: 500px;
+  margin: 40px auto;
+  background-color: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.register-form label,
+.login-form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #333;
+}
+
+.register-form input,
+.login-form input {
+  width: 90%;
+  text-align: center;
+  padding: 10px 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.register-form input:focus,
+.login-form input:focus {
+  border-color: #7B1F24;
+  outline: none;
+}
+
+button {
+  background-color: #7B1F24;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #60191d;
+}
+
+.text-red-600 {
+  color: #dc2626;
+}
+
+.hidden {
+  display: none;
+}
