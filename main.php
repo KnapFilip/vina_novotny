@@ -1,6 +1,6 @@
 <?php
 $activePage = 'main'; // Změň podle aktuální stránky
-require_once 'php/getLoggedInUser.php';
+require_once 'php/auth.php';
 include __DIR__ . '/include/translation_include.php';
 ?>
 

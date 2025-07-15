@@ -1,5 +1,4 @@
 <?php
-session_start();
 
 /**
  * Vrací pole údajů přihlášeného uživatele ze session,

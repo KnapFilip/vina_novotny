@@ -1,25 +1,26 @@
-html, body, header, nav {
+html, body {
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 
 html {
-    background-color: #b9b9b9;
-    color: #2F2F2F;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
+  background-color: #b9b9b9;
+  color: #2F2F2F;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
 }
 
 body {
-    padding: 25px;
-    margin: 0; /* odstranění defaultního marginu */
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 header {
-    margin: 0; /* odstranění defaultního marginu */
-    top: 0;
-    width: 100%;
+  margin: 0;
+  top: 0;
+  width: 100%;
 }
 
 /* Navigace */
@@ -33,7 +34,7 @@ nav {
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
   position: sticky;
   top: 0;
-  color: #F5F1E9; /* krémový text */
+  color: #F5F1E9;
   margin: 0 -25px;
 }
 
@@ -59,7 +60,7 @@ nav ul {
 
 /* Odkazy */
 nav ul li a {
-  color: #F5F1E9; /* krémová */
+  color: #F5F1E9;
   text-decoration: none;
   font-weight: 600;
   padding: 0.45rem 0.9rem;
@@ -72,14 +73,14 @@ nav ul li a {
 
 /* Hover efekt vínové barvy s lehkým zlatým glow */
 nav ul li a:hover {
-  background-color: #7B1F24; /* vínová */
-  color: #FAF3E0; /* světle béžová */
+  background-color: #7B1F24;
+  color: #FAF3E0;
   box-shadow: 0 0 10px #D4AF37;
 }
 
 /* Aktivní stránka - vínová pozadí s bronzovým glow */
 nav ul li a.active {
-  background-color: #800020; /* tmavší vínová */
+  background-color: #800020;
   color: #FAF3E0;
   box-shadow: 0 0 12px #B08D57;
 }
@@ -101,7 +102,7 @@ nav ul li a.active {
 }
 
 .lang-switcher a:hover {
-  color: #B08D57; /* zlatá/bronzu akcent */
+  color: #B08D57;
 }
 
 /* Flex container pro jazykový přepínač uvnitř ul */
@@ -110,11 +111,38 @@ nav ul > .lang-switcher {
   align-items: center;
 }
 footer {
-    text-align: center;
-    margin: 50px 0 20px 0;
+  text-align: center;
+  margin: 50px 0 20px 0;
 }
 footer img {
-    height: 30px;
-    vertical-align: middle;
-    margin-right: 10px;
+  height: 30px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.admin-dropdown {
+    position: relative;
+}
+
+.admin-dropdown > a {
+    cursor: pointer;
+}
+
+.admin-dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #9b9b9b;
+    border: 1px solid #ccc;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 999;
+}
+
+.admin-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.admin-dropdown .dropdown-content li {
+    padding: 8px 12px;
+    white-space: nowrap;
 }

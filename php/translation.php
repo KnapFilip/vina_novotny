@@ -12,6 +12,10 @@ return [
         'login' => 'Login',
         'register' => 'Register',
         'profile' => 'Profile',
+        'admin_menu' => 'Admin',
+        'admin_dashboard' => 'Admin Panel',
+        'manage_users' => 'Manage Users',
+        'admin_news' => 'News Management',
 
         // Login register
 
@@ -32,7 +36,6 @@ return [
         'passwords_do_not_match' => 'Passwords do not match.',
         'login_success' => 'Login successful!',
         'login_failed' => 'Invalid login credentials.',
-
     ],
     'cs' => [
         'home' => 'Úvod',
@@ -45,6 +48,10 @@ return [
         'login' => 'Přihlášení',
         'register' => 'Registrace',
         'profile' => 'Profil',
+        'admin_menu' => 'Admin',
+        'admin_dashboard' => 'Administrace',
+        'manage_users' => 'Správa uživatelů',
+        'admin_news' => 'Novinky',
 
         // Login register
 

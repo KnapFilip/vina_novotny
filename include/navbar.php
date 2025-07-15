@@ -24,6 +24,16 @@ error_reporting(E_ALL);
         <?php else: ?>
             <li><a href="profile.php?lang=<?= $lang ?>" class="<?= ($activePage === 'profile') ? 'active' : '' ?>"><?= $t['profile'] ?></a></li>
         <?php endif; ?>
+        <?php if (isset($_SESSION['role_id']) && $_SESSION['role_id'] == 1): ?>
+            <li class="admin-dropdown">
+                <a href="#"><?= $t['admin_menu'] ?? 'Admin' ?> ▼</a>
+                <ul class="dropdown-content">
+                    <li><a href="admin_dashboard.php?lang=<?= $lang ?>"><?= $t['admin_dashboard'] ?? 'Administrace' ?></a></li>
+                    <li><a href="manage_users.php?lang=<?= $lang ?>"><?= $t['manage_users'] ?? 'Správa uživatelů' ?></a></li>
+                    <li><a href="admin_news.php?lang=<?= $lang ?>"><?= $t['admin_news'] ?? 'Novinky' ?></a></li>
+                </ul>
+            </li>
+        <?php endif; ?>
         <div class="lang-switcher">
             <a href="?lang=en">EN</a> | <a href="?lang=cs">CZ</a>
         </div>
