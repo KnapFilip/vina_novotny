@@ -1,7 +1,11 @@
 <?php
 session_start();
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+define('SECURE', true);
 require 'db.php';
-include __DIR__ . '/include/translation_include.php';
+include '../include/translation_include.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = $_POST['email'];
@@ -12,7 +16,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $user = $stmt->fetch();
 
     if ($user && password_verify($password, $user['password_hash'])) {
-        // Uložení údajů do session
         $_SESSION['user_id'] = $user['user_id'];
         $_SESSION['name'] = $user['name'];
         $_SESSION['surname'] = $user['surname'];
@@ -20,9 +23,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $_SESSION['role_id'] = $user['role'];
         $_SESSION['logged_in'] = true;
 
-        echo $t['login_success'];
-        // header('Location: index.php'); exit;
+        $_SESSION['flash_message'] = ['type' => 'success', 'text' => $t['login_success']];
+        header('Location: ../main.php');
+        exit;
     } else {
-        echo $t['login_failed'];
+        $_SESSION['flash_message'] = ['type' => 'error', 'text' => $t['login_failed']];
+        header('Location: ../login_form.php');
+        exit;
     }
 }

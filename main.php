@@ -15,14 +15,17 @@ include __DIR__ . '/include/translation_include.php';
     <link rel="stylesheet" href="css/main.css" />
     <link rel="icon" href="images/logo.png" type="image/png" />
 </head>
+<header>
+    <?php include 'include/navbar.php'; ?>
+</header>
 
 <body>
-    <header>
-        <?php include 'include/navbar.php'; ?>
-    </header>
 
-    <main>
-
+    <main class="content">
+        <div class="ukázka">
+            <p><?= $t['test'] ?></p>
+                <h1><?= $t['welcome'] ?></h1>
+        </div>
     </main>
 
     <footer>

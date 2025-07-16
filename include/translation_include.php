@@ -1,6 +1,5 @@
 <?php
 // /include/translation_include.php
-session_start(); // pokud už to nemáš jinde, aby byla session dostupná všude
 
 // Načti překlady
 $translations = require __DIR__ . '../../php/translation.php';

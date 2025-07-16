@@ -16,6 +16,9 @@ return [
         'admin_dashboard' => 'Admin Panel',
         'manage_users' => 'Manage Users',
         'admin_news' => 'News Management',
+        'logout' => 'logout',
+        'test' => 'test',
+        'welcome' => 'Welcome to Karel Novotný Winery',
 
         // Login register
 
@@ -36,6 +39,28 @@ return [
         'passwords_do_not_match' => 'Passwords do not match.',
         'login_success' => 'Login successful!',
         'login_failed' => 'Invalid login credentials.',
+
+        // Footer
+
+        'footer_about' => 'About Us',
+        'footer_our_wines' => 'Our Wines',
+        'footer_visit_us' => 'Visit Us',
+        'footer_about_wine' => 'About Wine',
+
+        'footer_documents' => 'Documents',
+        'footer_terms' => 'Terms and Conditions',
+        'footer_privacy' => 'Privacy Policy',
+        'footer_cookies' => 'Cookies',
+
+        'footer_partners' => 'Partners',
+        'partners1' => 'Partner 1',
+        'partners2' => 'Partner 2',
+        'partners3' => 'Partner 3 ',
+
+        'footer_social' => 'Social Media',
+        'footer_created_by' => 'Created by',
+        'with' => 'with',
+
     ],
     'cs' => [
         'home' => 'Úvod',
@@ -48,10 +73,13 @@ return [
         'login' => 'Přihlášení',
         'register' => 'Registrace',
         'profile' => 'Profil',
-        'admin_menu' => 'Admin',
-        'admin_dashboard' => 'Administrace',
+        'admin_menu' => 'Administrace',
+        'admin_dashboard' => 'Přehled',
         'manage_users' => 'Správa uživatelů',
         'admin_news' => 'Novinky',
+        'logout' => 'Odhlásit se',
+        'test' => 'Toto je testovací odstavec, který simuluje běžný obsah webové stránky. Klikněte na tlačítko „Zjistit více“ nebo přejděte do sekce „O nás“. Naše nabídka je k dispozici v hlavním menu. Vyzkoušejte náš interaktivní kvíz, registrujte se a získejte přístup k exkluzivnímu obsahu.',
+        'welcome' => 'Vítejte na stránkách Karel Novotný Wine',
 
         // Login register
 
@@ -72,5 +100,28 @@ return [
         'passwords_do_not_match' => 'Hesla se neshodují.',
         'login_success' => 'Přihlášení úspěšné!',
         'login_failed' => 'Neplatné přihlašovací údaje.',
+
+        // Footer
+
+        'footer_about' => 'O nás',
+        'footer_our_wines' => 'Naše vína',
+        'footer_visit_us' => 'Navštivte nás',
+        'footer_about_wine' => 'O víně',
+
+        'footer_documents' => 'Dokumenty',
+        'footer_terms' => 'Obchodní podmínky',
+        'footer_privacy' => 'Ochrana osobních údajů',
+        'footer_cookies' => 'Cookies',
+
+        'footer_partners' => 'Partneři',
+        'partners1' => 'Partner 1',
+        'partners2' => 'Partner 2',
+        'partners3' => 'Partner 3 ',
+
+        'footer_social' => 'Sociální sítě',
+        'footer_created_by' => 'Vytvořil',
+        'with' => 's',
+
+
     ],
 ];

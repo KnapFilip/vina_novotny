@@ -1,6 +1,7 @@
 <?php
 $activePage = 'register';
 include __DIR__ . '/include/translation_include.php';
+define('SECURE', true);
 ?>
 
 <!DOCTYPE html>
@@ -20,7 +21,7 @@ include __DIR__ . '/include/translation_include.php';
         <?php include 'include/navbar.php'; ?>
     </header>
     <main>
-        <form method="POST" action="register.php?lang=<?= $lang ?>" class="register-form" id="registerForm">
+        <form method="POST" action="php/register.php?lang=<?= $lang ?>" class="register-form" id="registerForm">
             <label for="name"><?= $t['name'] ?></label>
             <input type="text" name="name" required class="input">
 

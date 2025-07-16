@@ -1,6 +1,7 @@
 <?php
+session_start(); // MUSÍ BÝT PRVNÍ
 $isLoggedIn = isset($_SESSION['user_id']);
-
+define('SECURE', true);
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
@@ -19,12 +20,13 @@ error_reporting(E_ALL);
         <li><a href="visitus.php?lang=<?= $lang ?>" class="<?= ($activePage === 'visitus') ? 'active' : '' ?>"><?= $t['visitus'] ?></a></li>
         <li><a href="quiz.php?lang=<?= $lang ?>" class="<?= ($activePage === 'quiz') ? 'active' : '' ?>"><?= $t['quiz'] ?></a></li>
         <?php if (!$isLoggedIn): ?>
-            <li><a href="login.php?lang=<?= $lang ?>" class="<?= ($activePage === 'login') ? 'active' : '' ?>"><?= $t['login'] ?></a></li>
-            <li><a href="register.php?lang=<?= $lang ?>" class="<?= ($activePage === 'register') ? 'active' : '' ?>"><?= $t['register'] ?></a></li>
+            <li><a href="login_form.php?lang=<?= $lang ?>" class="<?= ($activePage === 'login') ? 'active' : '' ?>"><?= $t['login'] ?></a></li>
+            <li><a href="register_form.php?lang=<?= $lang ?>" class="<?= ($activePage === 'register') ? 'active' : '' ?>"><?= $t['register'] ?></a></li>
         <?php else: ?>
             <li><a href="profile.php?lang=<?= $lang ?>" class="<?= ($activePage === 'profile') ? 'active' : '' ?>"><?= $t['profile'] ?></a></li>
+            <li><a href="php/logout.php?lang=<?= $lang ?>" class="<?= ($activePage === 'logout') ? 'active' : '' ?>"><?= $t['logout'] ?></a></li>
         <?php endif; ?>
-        <?php if (isset($_SESSION['role_id']) && $_SESSION['role_id'] == 1): ?>
+        <?php if (isset($_SESSION['role_id']) && $_SESSION['role_id'] == 2): ?>
             <li class="admin-dropdown">
                 <a href="#"><?= $t['admin_menu'] ?? 'Admin' ?> ▼</a>
                 <ul class="dropdown-content">

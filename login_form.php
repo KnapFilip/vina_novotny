@@ -21,7 +21,7 @@ include __DIR__ . '/include/translation_include.php';
     </header>
 
     <main>
-        <form method="POST" action="login.php?lang=<?= $lang ?>" class="login-form">
+        <form method="POST" action="php/login.php?lang=<?= $lang ?>" class="login-form">
             <label for="email"><?= $t['email'] ?></label>
             <input type="email" name="email" required class="input">
 
