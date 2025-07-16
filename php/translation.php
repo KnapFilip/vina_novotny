@@ -78,7 +78,7 @@ return [
         'manage_users' => 'Správa uživatelů',
         'admin_news' => 'Novinky',
         'logout' => 'Odhlásit se',
-        'test' => 'Toto je testovací odstavec, který simuluje běžný obsah webové stránky. Klikněte na tlačítko „Zjistit více“ nebo přejděte do sekce „O nás“. Naše nabídka je k dispozici v hlavním menu. Vyzkoušejte náš interaktivní kvíz, registrujte se a získejte přístup k exkluzivnímu obsahu.',
+        'test' => 'This is a test paragraph that simulates typical website content. Click the “Learn More” button or go to the “About Us” section. Our offer is available in the main menu. Try our interactive quiz, register, and gain access to exclusive content.',
         'welcome' => 'Vítejte na stránkách Karel Novotný Wine',
 
         // Login register
